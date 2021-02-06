@@ -59,12 +59,16 @@ class Language():
             words = line.lower().split()
             if words[0][0] == '[':
                 section = words[0][1:-1]
+                # this is kinda garbage but the only alternative is making a dictionary only to be used once and with only 3 entries...
+                state = 1 if section == 'commands' else (2 if section == 'activators' else (3 if section == 'deactivators' else 0))
+                '''
                 if section == 'commands':
                     state = 1
                 elif section == 'activators':
                     state = 2
                 elif section == 'deactivators':
                     state = 3
+                  '''
                 continue
 
             translation = words[0]

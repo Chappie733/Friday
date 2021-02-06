@@ -73,7 +73,7 @@ class Executor:
 				play_music, 
 				play_playlist,
 				pause, # pause
-				pause, # resume
+				pause, # resume (yeah I could have just linked it to the same id whatever...)
 				skip,
 				set_volume,
 				screenshot]

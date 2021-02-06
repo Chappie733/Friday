@@ -84,7 +84,6 @@ class Language():
             elif state == 3:
                 self.deactivators.append(translation)
     
-    # (to the command in english)
     def get_translation(self, command):
         return self.DEFAULT_COMMANDS[self.commands[command]]
 
